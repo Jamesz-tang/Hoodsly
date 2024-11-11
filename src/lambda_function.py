@@ -1,7 +1,7 @@
 import json
 
 cabinet_orders = {
-    1: {"id": 1, "customer": "James-Test", "cabinets": ["A"]},
+    1: {"id": 1, "customer": "James-Testy", "cabinets": ["A"]},
     2: {"id": 2, "customer": "Bentley", "cabinets": ["A", "B"]}
 }
 
