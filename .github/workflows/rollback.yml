@@ -14,6 +14,9 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+      with:
+        ref: ${{ github.event.inputs.branch }}
+        fetch-depth: 0
 
     - name: Create Zip file for Lambda function
       run: cd src && zip -r lambda_function.zip .
