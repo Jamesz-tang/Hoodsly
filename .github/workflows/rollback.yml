@@ -8,8 +8,9 @@ on:
         required: true
 
 jobs:
-  test_rollback:
+  deploy:
     runs-on: ubuntu-latest
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v2
