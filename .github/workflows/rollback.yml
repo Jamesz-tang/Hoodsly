@@ -6,7 +6,7 @@ on:
         required: true
 
 jobs:
-  rollback:
+  test_rollback:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
