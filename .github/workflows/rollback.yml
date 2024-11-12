@@ -1,7 +1,11 @@
-name: Deploy to AWS Lambda
+name: Rollback on AWS Lambda
 
 on:
-  workflow_dispatch
+  workflow_dispatch:
+    inputs:
+      commit:
+        description: 'The commit to rollback to'
+        required: true
 
 jobs:
   deploy:
